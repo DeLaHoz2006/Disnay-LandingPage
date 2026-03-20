@@ -4,6 +4,21 @@
     border: 0px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
+    font-family: "Roboto Flex", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings:
+    "slnt" 0,
+    "wdth" 100,
+    "GRAD" 0,
+    "XOPQ" 96,
+    "XTRA" 468,
+    "YOPQ" 79,
+    "YTAS" 750,
+    "YTDE" -203,
+    "YTFI" 738,
+    "YTLC" 514,
+    "YTUC" 712;
 }
 
 
@@ -11,7 +26,7 @@
     display: flexbox;
     flex-direction: row;
     max-width: 100%;
-    background: linear-gradient( #066e83, #011d28 75%);
+    background: linear-gradient(#066e83, #011d28 75%);
 }
 
 .content-nav-images {
@@ -34,11 +49,13 @@
     align-items: center;
 }
 
-.content-nav-images-RM, .content-nav-images-AM {
+.content-nav-images-RM,
+.content-nav-images-AM {
     max-width: 70px;
 }
 
-.content-nav-images-center {
+.content-nav-images-center,
+.do {
     text-align: center;
     color: white;
     font-family: "Open Sans", sans-serif;
@@ -46,15 +63,7 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-}
 
-span {
-    font-family: "Open Sans", sans-serif;
-    font-size: 20px;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-variation-settings: "wdth" 100;
-    font-weight: 400;
 }
 
 .content-nav-buttom-sus {
@@ -70,52 +79,128 @@ span {
     border-radius: 3px
 }
 
-.content2 {
-
-}
-
 .content2-degrade {
     display: flex;
     z-index: -100;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.418), rgb(0, 0, 0) 90%), 
-    url(/src/img/Background/Banner-Disney.png) center/cover no-repeat;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.418), rgb(0, 0, 0) 90%),
+        url(/src/img/Background/Banner-Disney.png) center/cover no-repeat;
 }
 
 .content2-degrade-offer {
-    display: flex;
+    position: relative;
+    display:flexbox;
     justify-content: center;
     align-items: center;
     margin-left: auto;
     margin-right: auto;
-    height: 49vh;
+    margin-top: 16pc;
+    /* height: 100vh; */
 }
 
-.content2-degrade-offer-title, .t, .p{
+.content2-degrade-offer-case-title,
+.t,
+.p {
     display: flex;
     justify-content: center;
     align-items: center;
     color: #37bed5;
     font-family: "Open Sans", sans-serif;
-    font-size: 30px;
+    font-size: 25px;
     font-optical-sizing: auto;
     font-style: normal;
     font-weight: 500;
     font-variation-settings: "wdth" 100;
+
+    .t {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .p {
+        margin-left: 20px;
+        margin-right: 10px;
+    }
 }
 
-.t {
-    margin-left: 20px;
-    margin-right: 20px;
+.content2-plans-sub, .content2-plans-sub {
+    display: flex;
+    justify-content: center;
+    font-size: 35px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+
+    .d {
+        margin-left: 20px;
+    }
 }
 
-.p {
-    margin-left: 20px;
-    margin-right: 10px;
+.content2-plans-sub-price {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 120px;
+    font-family: Roboto;
 }
 
-.content2-offer-sub-plans {
+.content2-plans-sub-dur {
+    display: flex;    
+    color: white;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
 
+    .M {
+        color: #37bed5;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .dos {
+        color: #37bed5;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }
 
+.content2-plans-date {
+    display: flex;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1pc;
+    font-weight: 500;
+}
+
+.content2-plans-start {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #b7b8bd;
+    font-weight: 300;
+    margin-top: 2pc;
+}
+
+
+
+.content2-degrade-now {
+    margin-top: 2pc;
+    width: 100%;
+
+    input {
+        padding: 15px;
+        width: 61%;
+        background-color: #2c2e35;
+        border-radius: 5px 0px 0px 5px;
+    }
+
+    input::placeholder {
+        display: flex;
+        color: rgb(173, 173, 173);
+        font-size: 16px;
+        text-align: start;
+        align-items: center;
+    }
+}
