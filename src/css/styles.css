@@ -11,7 +11,7 @@
     display: flexbox;
     flex-direction: row;
     max-width: 100%;
-    background: linear-gradient(#066e83, #011d28 75%);
+    background: linear-gradient( #066e83, #011d28 75%);
 }
 
 .content-nav-images {
@@ -20,12 +20,12 @@
     justify-content: space-around;
     align-items: center;
     max-width: 100%;
-    max-height: 150px;
+    max-height: 120px;
 }
 
 .content-nav-images-ED {
     max-width: 300px;
-    margin: 0pc 0pc 1pc 0pc;
+    margin: 0pc 0pc 1pc 3pc;
 }
 
 .content-nav-images-block {
@@ -35,7 +35,7 @@
 }
 
 .content-nav-images-RM, .content-nav-images-AM {
-    max-width: 80px;
+    max-width: 70px;
 }
 
 .content-nav-images-center {
@@ -47,3 +47,75 @@
     font-style: normal;
     font-variation-settings: "wdth" 100;
 }
+
+span {
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-variation-settings: "wdth" 100;
+    font-weight: 400;
+}
+
+.content-nav-buttom-sus {
+    display: flex;
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    font-variation-settings: "wdth" 100;
+    padding: 17px 82px 17px 75px;
+    text-align: center;
+    border-radius: 3px
+}
+
+.content2 {
+
+}
+
+.content2-degrade {
+    display: flex;
+    z-index: -100;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.418), rgb(0, 0, 0) 90%), 
+    url(/src/img/Background/Banner-Disney.png) center/cover no-repeat;
+}
+
+.content2-degrade-offer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    height: 49vh;
+}
+
+.content2-degrade-offer-title, .t, .p{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #37bed5;
+    font-family: "Open Sans", sans-serif;
+    font-size: 30px;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 500;
+    font-variation-settings: "wdth" 100;
+}
+
+.t {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.p {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+
+.content2-offer-sub-plans {
+
+}
+
