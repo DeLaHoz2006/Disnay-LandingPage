@@ -16,9 +16,8 @@
         rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap"
-        rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -75,7 +74,8 @@
                     <h1 class="content2-plans-sub-price">COP 8.990</h1>
 
                     <h1 class="content2-plans-sub-dur">
-                        P O R <span class="M">M E S</span> D U R A N T E <span class="dos">2</span> M E S E S
+                        P O R <span class="M"></span>M E S</span> <span class="DU">D U R A N T E</span> <span
+                            class="dos">2</span> <span class="MES">M E S E S</span>
                     </h1>
 
                     <h3 class="content2-plans-date">
@@ -88,21 +88,111 @@
                 </div>
 
                 <div class="content2-degrade-now">
-                    <input type="email" name="email" id="email" placeholder="Correo electronico">
-                    <button class="content2-degrade-now-buttom">
-                        SUSCRIBIRME AHORA
-                    </button>
+                    <div class="subscription__form">
+                        <input type="email" name="email" id="email" placeholder="Correo electronico">
+                        <button class="content2-degrade-now-buttom">
+                            SUSCRIBIRME AHORA
+                        </button>
+                    </div>
 
-                    <h4 class="content2-degrade-now-detail">
-                        <a href="#"> Ver detalles de los planes </a>
-                    </h4>
+                    <div class="subscription__details">
+                        <a href="#" class="subscription__link">Ver detalles de los planes</a>
+                    </div>
+
+                    <div class="channels__disney">
+                        <img class="channels__image" src="/src/img/channels/Channels-Disney.png" alt="">
+                    </div>
+
+                    <div class="text__conditions">
+                        <p>
+                            Todos los canales básicos de ESPN disponibles exclusivamente en el plan Premium. Precio con
+                            descuento (solo países con estos planes): plan Estándar con anuncios (COP 8.990/mes final);
+                            plan
+                            Estándar (COP 15.900/mes final); plan Premium (COP 17.900/mes final). Oferta válida desde el
+                            06/03/2026 hasta el 30/03/2026 para nuevas suscripciones a Disney+. No acumulable con otras
+                            promociones. Vencido este plazo, el plan se renovará automáticamente al precio vigente en
+                            ese
+                            momento en tu territorio. Cancelación disponible en cualquier momento durante la promoción.
+                            Contenidos sujetos a disponibilidad. En DisneyPlus.com hay más información. <br>
+                            <br>
+                            Los siguientes títulos aún no se encuentran disponibles en la plataforma. Fechas de estreno:
+                            Zootopia 2 (11 de marzo), Daredevil 2 (24 de marzo), Paradise: temporada 2 (23 de febrero).
+                        </p>
+                    </div>
+                    <div class="svg__arrow">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px"
+                            fill="#FFFFFF">
+                            <path d="M480-344 240-584l43-43 197 197 197-197 43 43-240 240Z" />
+                        </svg>
+                    </div>
                 </div>
             </div>
-
         </div>
 
-    </div>
 
+        <main class="sports">
+            <div class="sports__content">
+                <div class="sports__logos">
+                    <img class="sports__disney" src="/src/img/logo-nav/Logo-ESNP_DISNAY.png" alt="">
+                </div>
+                <div class="sports__text">
+
+                    <p class="sports__text__sus">
+                        Suscríbete al plan Premium a COP 17.900/mes durante dos meses, hasta el 30 de marzo. Disfruta
+                        del mejor entretenimiento deportivo del mundo y los eventos en vivo de ESPN, con una oferta
+                        especial.
+                    </p>
+
+                    <button class="sports__button">
+                        OBTENER OFERTA
+                    </button>
+                </div>
+
+                <div class="sports__carousel">
+                    <button class="carousel__btn carousel__btn--left" id="btnLeft">❮</button>
+
+                    <div class="sports__all" id="carouselImages">
+                        <div class="sports__item">
+                            <img src="/src/img/Sports/6.png" alt="">
+                        </div>
+                        <div class="sports__item">
+                            <img src="/src/img/Sports/7.png" alt="">
+                        </div>
+                        <div class="sports__item">
+                            <img src="/src/img/Sports/8.png" alt="">
+                        </div>
+                        <div class="sports__item">
+                            <img src="/src/img/Sports/9.png" alt="">
+                        </div>
+                        <div class="sports__item">
+                            <img src="/src/img/Sports/10.png" alt="">
+                        </div>
+                        <div class="sports__item">
+                            <img src="/src/img/Sports/11.png" alt="">
+                        </div>
+                        <div class="sports__item">
+                            <img src="/src/img/Sports/12.png" alt="">
+                        </div>
+                    </div>
+
+                    <button class="carousel__btn carousel__btn--right" id="btnRight">❯</button>
+                </div>
+            </div>
+        </main>
+
+        <main class="movies">
+            <div class="movies__title">
+                <h1 class="movies__topco">
+                    Top 10 Hoy en Colombia
+                </h1>
+            </div>
+
+            <div class="movies__catalog">
+                
+            </div>
+        </main>
+
+        <script src="/src/js/scroll.js"></script>
 </body>
 
 </html>

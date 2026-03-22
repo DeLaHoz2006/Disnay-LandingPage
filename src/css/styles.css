@@ -84,7 +84,7 @@
     display: flex;
     z-index: -100;
     width: 100%;
-    height: 100vh;
+    height: 110vh;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.418), rgb(0, 0, 0) 90%),
         url(/src/img/Background/Banner-Disney.png) center/cover no-repeat;
 }
@@ -166,7 +166,6 @@
     font-weight: 500;
 
     .M {
-        color: #37bed5;
         margin-left: 20px;
         margin-right: 20px;
     }
@@ -175,6 +174,15 @@
         color: #37bed5;
         margin-left: 20px;
         margin-right: 20px;
+    }
+
+    .DU {
+        color: #37bed5;
+        margin-left: 20px;
+    }
+
+    .MES {
+        color: #37bed5;
     }
 }
 
@@ -196,33 +204,46 @@
     margin-top: 2pc;
 }
 
-
-
 .content2-degrade-now {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+.subscription__form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: static;
     margin-top: 2pc;
     width: 100%;
+}
 
-    input {
-        display: flexbox;
+input[type="email"]{
+    display: inline;
         padding: 18px 0px 16px 15px;
-        width: 61%;
+        width: 40%;
         background-color: #2c2e35;
         border-radius: 5px 0px 0px 5px;
     }
 
     input::placeholder {
-        display: flex;
         color: rgb(173, 173, 173);
         font-size: 16px;
         text-align: start;
         align-items: center;
     }
-}
 
 .content2-degrade-now-buttom {
     background-color: #02d6e8;
     border: none;
-    width:39%;
+    width:300px;
     padding: 15px;
     margin-left: -4px;
     border-radius: 0px 5px 5px 0px;
@@ -231,12 +252,172 @@
     cursor: pointer;
 }
 
-.content2-degrade-now-detail a {
+.subscription__details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.subscription__link {
+    color: white;
+    font-weight: 200;
+    font-size: 1.125rem;
+    transition: var(--transition);
+}
+
+.channels__image {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: -12pc;
+    margin-left: 2pc;
+    width: 800px;
+}
+
+.text__conditions {
+    z-index: 100;
+    color: rgb(148, 147, 147);
+    font-size: 12px;
+    text-align: center;
+    width: 81%;
+    margin-top: -10.8pc;
+}
+
+.svg__arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3pc;
+}
+
+.sports{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 90vh;
+    background: url(/src/img/Sports/formula1.png) center/cover no-repeat;
+}
+
+.sports__content {
+    margin-top: 2pc;
+}
+
+.sports__disney {
+    max-width: 300px;
+    margin: 0pc 0pc 0pc 6pc;
+    transform: scale(1.1);
+}
+
+.sports__text {
+    max-width: 40%;
+    margin: -1pc 0pc 0pc 6pc;
+    color: #b7b5b8;
+}
+
+.sports__button {
+    display: flexbox;
+    background-color: #02d6e8;
+    border: none;
+    width:330px;
+    margin: 2pc 0pc 0pc 0pc;
+    padding: 18px 22px 18px 22px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.sports__carousel {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 2rem;
+    width: 100%;
+    position: relative;
+}
+
+.sports__all {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    gap: 2rem;
+    padding: 10px 0;
+    scrollbar-width: none;
+    margin: 4pc 0px 0pc 0pc;
+}
+
+.sports__all::-webkit-scrollbar {
+    display: none;
+}
+
+.sports__item {
+    flex-shrink: 0;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+    margin-left: -0.7pc;
+}
+
+.sports__item img {
+    width: 300px;
+    object-fit: contain;
+}
+
+.carousel__btn {
+    background: transparent;
+    border: none;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    margin-right: 5pc;
+    margin-left: 6pc;
+}
+
+.sports__all:not(:first-child) ~ .carousel__btn--left,
+.sports__all:not(:last-child) ~ .carousel__btn--right {
+    opacity: 0;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+.carousel__btn--left.show,
+.carousel__btn--right.show {
+    opacity: 0;
+    visibility: visible;
+    pointer-events: auto;
+}
+
+
+
+.movies {
+    display: flex;
+    flex-direction: column;
+    margin-top: -7.3pc;
+    background-color: #040714;
+    height: 500vh;
+}
+
+.movies__title {
+    display: flex;
+    justify-content: center;
+    margin-top: 2pc;
+    margin-bottom: 2pc;
+}
+
+.movies__topco {
     color: white;
-    font-weight: 200;
-    font-size: 18px;
-    margin-top: 1pc;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 40px;
 }
