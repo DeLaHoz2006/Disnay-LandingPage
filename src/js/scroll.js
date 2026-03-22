@@ -33,14 +33,14 @@ function checkButtons() {
 
 btnLeft.addEventListener('click', () => {
     carouselImages.scrollBy({
-        left: -620,
+        left: -900,
         behavior: 'smooth'
     });
 });
 
 btnRight.addEventListener('click', () => {
     carouselImages.scrollBy({
-        left: 620,
+        left: 900,
         behavior: 'smooth'
     });
 });

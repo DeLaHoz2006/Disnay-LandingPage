@@ -99,6 +99,16 @@
     background-color: #000000c9;
     border: 2px solid grey;
     color: white;
+    cursor: pointer;
+    z-index: 100;
+    transition: 0.2s all;
+    border-radius: 5px;
+}
+
+.content2-degrade-login-buttom:hover {
+    background-color: white;
+    color: black;
+    border: 2px solid white;
 }
 
 .content2-degrade-offer {
@@ -223,6 +233,7 @@
     position: static;
     margin-top: 2pc;
     width: 100%;
+    z-index: 100;
 }
 
 input[type="email"]{
