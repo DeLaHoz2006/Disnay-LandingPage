@@ -8,19 +8,18 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:
-    "slnt" 0,
-    "wdth" 100,
-    "GRAD" 0,
-    "XOPQ" 96,
-    "XTRA" 468,
-    "YOPQ" 79,
-    "YTAS" 750,
-    "YTDE" -203,
-    "YTFI" 738,
-    "YTLC" 514,
-    "YTUC" 712;
+        "slnt" 0,
+        "wdth" 100,
+        "GRAD" 0,
+        "XOPQ" 96,
+        "XTRA" 468,
+        "YOPQ" 79,
+        "YTAS" 750,
+        "YTDE" -203,
+        "YTFI" 738,
+        "YTLC" 514,
+        "YTUC" 712;
 }
-
 
 .content {
     display: flexbox;
@@ -63,7 +62,6 @@
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings: "wdth" 100;
-
 }
 
 .content-nav-buttom-sus {
@@ -85,7 +83,8 @@
     z-index: -100;
     width: 100%;
     height: 110vh;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.418), rgb(0, 0, 0) 90%),
+    background:
+        linear-gradient(to bottom, rgba(0, 0, 0, 0.418), rgb(0, 0, 0) 90%),
         url(/src/img/Background/Banner-Disney.png) center/cover no-repeat;
 }
 
@@ -94,8 +93,8 @@
     margin-left: 185vh;
     margin-top: 5px;
     border: none;
-    padding: 13px 20px 13px 20px ;
-    font-size: 18PX;
+    padding: 13px 20px 13px 20px;
+    font-size: 18px;
     background-color: #000000c9;
     border: 2px solid grey;
     color: white;
@@ -113,7 +112,7 @@
 
 .content2-degrade-offer {
     position: relative;
-    display:flexbox;
+    display: flexbox;
     justify-content: center;
     align-items: center;
     margin-left: auto;
@@ -146,7 +145,6 @@
     }
 }
 
-
 .content2-plans-sub {
     display: flex;
     justify-content: center;
@@ -169,7 +167,7 @@
 }
 
 .content2-plans-sub-dur {
-    display: flex;    
+    display: flex;
     color: white;
     justify-content: center;
     align-items: center;
@@ -224,7 +222,6 @@
     width: 50%;
 }
 
-
 .subscription__form {
     display: flex;
     flex-direction: row;
@@ -236,25 +233,25 @@
     z-index: 100;
 }
 
-input[type="email"]{
+input[type="email"] {
     display: inline;
-        padding: 18px 0px 16px 15px;
-        width: 40%;
-        background-color: #2c2e35;
-        border-radius: 5px 0px 0px 5px;
-    }
+    padding: 18px 0px 16px 15px;
+    width: 40%;
+    background-color: #2c2e35;
+    border-radius: 5px 0px 0px 5px;
+}
 
-    input::placeholder {
-        color: rgb(173, 173, 173);
-        font-size: 16px;
-        text-align: start;
-        align-items: center;
-    }
+input::placeholder {
+    color: rgb(173, 173, 173);
+    font-size: 16px;
+    text-align: start;
+    align-items: center;
+}
 
 .content2-degrade-now-buttom {
     background-color: #02d6e8;
     border: none;
-    width:300px;
+    width: 300px;
     padding: 15px;
     margin-left: -4px;
     border-radius: 0px 5px 5px 0px;
@@ -302,7 +299,7 @@ input[type="email"]{
     margin-top: 3pc;
 }
 
-.sports{
+.sports {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -330,7 +327,7 @@ input[type="email"]{
     display: flexbox;
     background-color: #02d6e8;
     border: none;
-    width:330px;
+    width: 330px;
     margin: 2pc 0pc 0pc 0pc;
     padding: 18px 22px 18px 22px;
     border-radius: 5px;
@@ -348,7 +345,8 @@ input[type="email"]{
     position: relative;
 }
 
-.sports__all {
+.sports__all,
+.movies__all {
     display: flex;
     overflow-x: auto;
     scroll-behavior: smooth;
@@ -362,7 +360,12 @@ input[type="email"]{
     display: none;
 }
 
-.sports__item {
+.movies__all::-webkit-scrollbar {
+    display: none;
+}
+
+.sports__item,
+.movies__item {
     flex-shrink: 0;
     text-align: center;
     cursor: pointer;
@@ -375,14 +378,20 @@ input[type="email"]{
     object-fit: contain;
 }
 
-.carousel__btn {
+.movies__item img {
+    width: 300px;
+    object-fit: contain;
+}
+
+.carousel__btn,
+.carousel__btn__movies {
     background: transparent;
     border: none;
     color: rgb(255, 255, 255);
     font-size: 2rem;
     font-weight: bold;
     cursor: pointer;
-    transition: all 0.3s;
+    transition: all 0.3s ease;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -394,8 +403,13 @@ input[type="email"]{
     margin-left: 6pc;
 }
 
-.sports__all:not(:first-child) ~ .carousel__btn--left,
-.sports__all:not(:last-child) ~ .carousel__btn--right {
+.carousel__btn__movies {
+    margin-right: 2pc;
+    margin-left: 2pc;
+}
+
+.sports__all:not(:first-child)~.carousel__btn--left,
+.sports__all:not(:last-child)~.carousel__btn--right {
     opacity: 0;
     visibility: visible;
     pointer-events: auto;
@@ -408,14 +422,12 @@ input[type="email"]{
     pointer-events: auto;
 }
 
-
-
 .movies {
     display: flex;
     flex-direction: column;
     margin-top: -7.3pc;
     background-color: #040714;
-    height: 500vh;
+    height: auto;
 }
 
 .movies__title {
@@ -425,10 +437,254 @@ input[type="email"]{
     margin-bottom: 2pc;
 }
 
-.movies__topco {
+.movies__topcolom {
     color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     font-style: normal;
     font-size: 40px;
 }
+
+.plans {
+    display: flex;
+    flex-direction: column;
+    background-color: #040714;
+    color: white;
+    height: 140vh;
+    width: 100%;
+}
+
+.plans__month {
+    display: flexbox;
+    text-align: center;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3pc;
+    font-size: 20px;
+    font-weight: 400;
+    font-style: bold;
+}
+
+.plans__month__title {
+    margin-bottom: 1pc;
+}
+
+.plans__prom {
+    text-align: center;
+    color: #00cffd;
+    font-size: 16px;
+}
+
+.plans__section {
+    display: inline-flex;
+    flex-direction: wrap;
+    justify-content: end;
+    gap: 20px;
+    position: sticky;
+    top: 0px;
+    background-color:#040714;
+    max-width: 84%;
+    height: auto;
+    z-index: 100;
+    padding-top: 5pc;
+}
+
+.plans__button,
+.plans__button__standard,
+.plans__button__ads {
+    padding: 15px 90px 15px 90px;
+    font-size: 18px;
+    border-radius: 4px;
+    background-color: #00d0ff;
+    font-weight: 300;
+    transition: 300ms all;
+    cursor: pointer;
+}
+
+.plans__button__standard {
+    color: white;
+    background-color: #066f86;
+}
+
+.plans__button__ads {
+    padding: 15px 15px 15px 15px;
+    color: rgb(255, 255, 255);
+    background-color: #066f86;
+}
+
+.plans__button__standard:hover,
+.plans__button__ads:hover {
+    background-color: #065e72;
+}
+
+.plans__button:hover {
+    background: #02b3db;
+}
+
+.plans__cost {
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5pc;
+    font-size: 14px;
+    text-align: center;
+    text-decoration: line-through;
+}
+
+.space {
+    margin-top: 5px;
+    font-size: 14px;
+    font-size: 14px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    color: #00cffd;
+}
+
+.plans__hr{
+    margin-top: 1.5pc;
+    margin-left: 20pc;
+    height: 1px;
+    width: 67%;
+    background-color: beige;
+}
+
+.plans__comparations {
+    max-width: 1278px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #b7b5b8;
+    font-weight: 300;
+    margin-left: 20pc;
+    height: 500vh;
+}
+
+.table__head {
+    display: flex;
+    align-items: center;
+    height: 4pc;
+    font-size: 14px;
+}
+
+.plans__year {
+    justify-content: start;
+    margin-right: 28pc;
+    font-size: 16px;
+}
+
+.plans__price{
+    margin-right: 8pc;
+    text-decoration: underline;
+    color: white;
+}
+
+.empty,
+.beneficies__empty,
+.beneficies__empty2,
+.beneficies__empty3{
+    width: 19px;
+    background-color: #2c2e35;
+    border-radius: 100px;
+    height: 5px;
+    margin-left: 4pc;
+}
+
+.line {
+    height: 0.5px;
+    width: 100%;
+    background-color: rgb(80, 80, 80);
+}
+
+.beneficies, .beneficies__movies {
+    display: flex;
+    align-items: center;
+}
+
+.beneficies__espn, 
+.beneficies__channels,
+.beneficies__ads,
+.beneficies__audio,
+.beneficies__devices,
+.beneficies__download{
+    display: flex;
+    align-items: center;
+    height: 5pc;
+    font-size: 16px;
+    max-width: 410px;
+    margin-right: 12pc;
+}
+
+.beneficies__channels {
+    max-width: 440px;
+    margin-right: -7.3pc;
+}
+
+.beneficies__ads {
+    max-width: 400px;
+    margin-right: -2.6pc;
+}
+
+.beneficies__audio {
+    max-width: 400px;
+    margin-right: 12.2pc;
+}
+
+.beneficies__devices {
+    margin-right: 7.3pc;
+}
+
+.beneficies__download {
+    margin-right: -4pc;
+}
+
+.beneficies__empty {
+    margin-left: 16.5pc;
+}
+
+.beneficies__empty2 {
+    margin-left: 16.1pc;
+}
+
+.beneficies__empty3 {
+    margin-left: 17pc;
+    margin-right: -0.5pc;
+}
+
+.check{
+    display: flex;
+    transform: scale(1.6);
+}
+
+.check2 {
+    transform: scale(1.6);
+    margin-left: 16.8pc;
+}
+
+.check3 {
+    transform: scale(1.6);
+    margin-left: 16pc;
+}
+
+.number {
+    display: flex;
+    margin-left: 15pc;
+    margin-right: 3pc;
+}
+
+.number2 {
+    margin-left: 14.3pc;
+}
+
+.plans__notes {
+    max-width: 100%;
+    padding: 1.5rem;
+    border-radius: 8px;
+    margin-left: -1.5pc;
+}
+
+.notes__text {
+    color: #bbbbbb;
+    font-size: 13px;
+    line-height: 1.5;
+    margin-bottom: 1rem;
+}
+

@@ -16,8 +16,10 @@
         rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
@@ -182,17 +184,253 @@
 
         <main class="movies">
             <div class="movies__title">
-                <h1 class="movies__topco">
+                <h1 class="movies__topcolom">
                     Top 10 Hoy en Colombia
                 </h1>
             </div>
 
             <div class="movies__catalog">
-                
+                <div class="sports__carousel">
+                    <button class="carousel__btn__movies carousel__btn--left" id="btnLeft2">❮</button>
+
+                    <div class="movies__all" id="carouselImages2">
+                        <div class="movies__item">
+                            <img src="/src/img/Movies/Zootopia2.png" alt="">
+                        </div>
+                        <div class="movies__item">
+                            <img src="/src/img/Movies/Predator.png" alt="">
+                        </div>
+                        <div class="movies__item">
+                            <img src="/src/img/Movies/hooper.png" alt="">
+                        </div>
+                        <div class="movies__item">
+                            <img src="/src/img/Movies/rooster.png" alt="">
+                        </div>
+                        <div class="movies__item">
+                            <img src="/src/img/Movies/coco.png" alt="">
+                        </div>
+                        <div class="movies__item">
+                            <img src="/src/img/Movies/moda.png" alt="">
+                        </div>
+                        <div class="movies__item">
+                            <img src="/src/img/Movies/cars.png" alt="">
+                        </div>
+                        <div class="movies__item">
+                            <img src="/src/img/Movies/Zootopia.png" alt="">
+                        </div>
+                        <div class="movies__item">
+                            <img src="/src/img/Movies/monsters.png" alt="">
+                        </div>
+                        <div class="movies__item">
+                            <img src="/src/img/Movies/love_story.png" alt="">
+                        </div>
+                    </div>
+
+                    <button class="carousel__btn__movies carousel__btn--right" id="btnRight2">❯</button>
+                </div>
             </div>
         </main>
 
-        <script src="/src/js/scroll.js"></script>
+        <main class="plans">
+            <div class="plans__month">
+                <h1 class="plans__month__title">
+                    ¿Qué plan vas a elegir?
+                </h1>
+
+                <p class="plans__prom">
+                    Suscríbete antes del 30 de marzo y ahorra en tu plan mensual durante 2 meses
+                </p>
+            </div>
+
+            <div class="plans__section">
+                <div class="plans__premium">
+                    <button class="plans__button">
+                        PREMIUM
+                    </button>
+
+                    <p class="plans__cost">
+                        COP 49.900/mes (final)*
+                    <div class="space">
+                        COP 17.900/mes* durante 2 meses
+                    </div>
+                    </p>
+                </div>
+
+                <div class="plans__standard">
+                    <button class="plans__button__standard">
+                        ESTÁNDAR
+                    </button>
+
+                    <p class="plans__cost">
+                        COP 36.900/mes (final)*
+                    <div class="space">
+                        COP 15.900/mes* durante 2 meses
+                    </div>
+                    </p>
+                </div>
+
+                <div class="plans__stan__ads">
+                    <button class="plans__button__ads">
+                        ESTÁNDAR CON ANUNCIOS
+                    </button>
+
+                    <p class="plans__cost">
+                        COP 24.900/mes (final)*
+                    <div class="space">
+                        COP 8.990/mes* durante 2 meses
+                    </div>
+                    </p>
+                </div>
+            </div>
+
+
+            <hr class="plans__hr">
+
+            <div class="plans__comparations">
+                <div class="plans__table">
+                    <div class="table__head">
+                        <div class="plans__year">Precio anual</div>
+                        <div class="plans__price">COP 418.900/año (final)*</div>
+                        <div class="plans__price">COP 309.900/año (final)*</div>
+                        <div class="empty"></div>
+                    </div>
+                    <hr class="line">
+                    <div class="beneficies">
+                        <div class="beneficies__espn">
+                            Todos los canales de ESPN, torneos y más de 500 eventos exclusivos por mes***
+                        </div>
+                        <div class="check">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#FFFFFF">
+                                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                            </svg>
+                        </div>
+                        <div class="beneficies__empty"></div>
+                        <div class="beneficies__empty"></div>
+                    </div>
+                    <hr class="line">
+                    <div class="beneficies__movies">
+                        <div class="beneficies__channels">
+                            Estrenos de películas, series originales y clásicos de Disney, Pixar, Marvel, Star Wars,
+                            National Geographic y Hulu
+                        </div>
+                        <div class="check2">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#FFFFFF">
+                                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                            </svg>
+                        </div>
+                        <div class="check2">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#FFFFFF">
+                                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                            </svg>
+                        </div>
+                        <div class="check3">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#FFFFFF">
+                                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                    <hr class="line">
+
+                    <div class="beneficies__movies">
+                        <div class="beneficies__ads">
+                            Películas y series sin interrupciones publicitarias****
+                        </div>
+                        <div class="check2">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#FFFFFF">
+                                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                            </svg>
+                        </div>
+                        <div class="check2">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#FFFFFF">
+                                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                            </svg>
+                        </div>
+                        <div class="beneficies__empty2"></div>
+                    </div>
+
+                    <hr class="line">
+
+                    <div class="beneficies__movies">
+                        <div class="beneficies__audio">
+                            Calidad de video hasta 4K UHD/HDR y sonido Dolby Atmos*****
+                        </div>
+                        <div class="check">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#FFFFFF">
+                                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                            </svg>
+                        </div>
+                        <div class="beneficies__empty3"></div>
+                        <div class="beneficies__empty3"></div>
+                    </div>
+
+                    <hr class="line">
+
+                    <div class="beneficies__movies">
+                        <div class="beneficies__devices">
+                            Dispositivos para ver en simultáneo
+                        </div>
+                        <div class="number">
+                            4
+                        </div>
+                        <div class="number">
+                            2
+                        </div>
+                        <div class="number2">
+                            2
+                        </div>
+                    </div>
+
+                    <hr class="line">
+
+                    <div class="beneficies__movies">
+                        <div class="beneficies__download">
+                            Descargas para ver tus favoritos sin conexión ni demoras
+                        </div>
+                        <div class="check2">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#FFFFFF">
+                                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                            </svg>
+                        </div>
+                        <div class="check2">
+                            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"
+                                fill="#FFFFFF">
+                                <path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z" />
+                            </svg>
+                        </div>
+                        <div class="beneficies__empty2"></div>
+                    </div>
+
+                    <hr class="line">
+
+                    <div class="plans__notes">
+        <p class="notes__text">
+            Todos los canales básicos de ESPN disponibles exclusivamente en el plan Premium. Precio con descuento (solo países con estos planes): plan Estándar con anuncios (COP 8.990/mes final); plan Estándar (COP 15.900/mes final); plan Premium (COP 17.900/mes final). Oferta válida desde el 06/03/2026 hasta el 30/03/2026 para nuevas suscripciones a Disney+. No acumulable con otras promociones. Vencido este plazo, el plan se renovará automáticamente al precio vigente en ese momento en tu territorio. Cancelación disponible en cualquier momento durante la promoción. Contenidos sujetos a disponibilidad. En DisneyPlus.com hay más información.
+        </p>
+
+        <p class="notes__text notes__text--small">
+            * El precio podría variar en caso de que el pago se realice en otras plataformas. Podrían aplicar cargos de terceros.<br>
+            ** Todos los canales básicos de ESPN están disponibles exclusivamente en el plan Premium. Los eventos en directo y deportivos incluyen publicidad como parte de cada transmisión.<br>
+            *** Todos los planes pueden incluir publicidad en contenidos en vivo (aun en repeticiones) y eventos especiales, antes y después de la reproducción del contenido, promociones de productos y servicios de Disney, patrocinios, inserción de publicidad y similares. Plan Estándar con anuncios: la compatibilidad con dispositivos varía y no es posible descargar contenidos.<br>
+            **** La calidad de audio y video y las descargas dependen del servicio de internet, las capacidades del dispositivo, el tipo de contenido y el nivel de servicio.
+        </p>
+    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+
+    </main>
+
+    <script src="/src/js/scroll.js"></script>
 </body>
 
 </html>
