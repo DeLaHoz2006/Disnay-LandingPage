@@ -873,6 +873,25 @@ input::placeholder {
     padding: 24px;
 }
 
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer__brand p,
+.footer__links a {
+    color: #f1eef2;
+    text-decoration: none;
+    line-height: 1.8;
+    display: block;
+    
+}
+
+
+
 /* ===================== RESPONSIVE BREAKPOINTS ===================== */
 
 @media (max-width: 1024px) {
