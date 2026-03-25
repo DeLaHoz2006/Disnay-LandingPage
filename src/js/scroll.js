@@ -189,3 +189,22 @@ const items = document.querySelectorAll(".item");
       }
     });
   });
+
+// Subscription submit: evita recarga y lleva al usuario a la sección de planes.
+const subscriptionForm = document.getElementById("subscriptionForm");
+if (subscriptionForm) {
+    subscriptionForm.addEventListener("submit", (e) => {
+        e.preventDefault();
+
+        const emailInput = subscriptionForm.querySelector("#email");
+        if (emailInput && !emailInput.checkValidity()) {
+            emailInput.focus();
+            return;
+        }
+
+        const planes = document.getElementById("planes");
+        if (planes) {
+            planes.scrollIntoView({ behavior: "smooth", block: "start" });
+        }
+    });
+}

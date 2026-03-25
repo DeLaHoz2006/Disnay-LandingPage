@@ -738,7 +738,7 @@ input::placeholder {
 
 .accordion {
     width: 100%;
-    max-width: 90%;
+    max-width: 900px;
     margin: 32px auto;
     box-sizing: border-box;
 }
