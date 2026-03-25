@@ -867,8 +867,9 @@ input::placeholder {
 }
 
 /* ===================== FOOTER ===================== */
-.pie {
-    background-color: #040714;
+.footer {
+    background-color: #0e0b14;
+    color: #f1eef2;
     padding: 24px;
 }
 
