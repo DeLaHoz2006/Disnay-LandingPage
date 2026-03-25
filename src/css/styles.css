@@ -91,7 +91,7 @@ html {
     min-height: 100vh;
     background:
         linear-gradient(to bottom, rgba(0, 0, 0, 0.418), rgb(0, 0, 0) 90%),
-        url(/src/img/Background/Banner-Disney.png) center/cover no-repeat;
+        url(../img/Background/Banner-Disney.png) center/cover no-repeat;
 }
 
 .content2-degrade-login {
@@ -305,7 +305,7 @@ input::placeholder {
     flex-direction: column;
     width: 100%;
     min-height: 60vh;
-    background: url(/src/img/Sports/formula1.png) center/cover no-repeat;
+    background: url(../img/Sports/Formula1.png) center/cover no-repeat;
 }
 
 .sports__content {

@@ -1,17 +1,7 @@
-# Web UI Progress
+# Carpeta public
 
-## Descripción
-Proyecto de práctica de desarrollo web UI.
+Esta carpeta no se usa en el despliegue actual de GitHub Pages.
 
-## Demo
-https://tu-usuario.github.io/nombre-repo/
+El sitio se publica desde la raiz del repositorio usando `index.html`.
 
-## Tecnologías
-- HTML
-- CSS
-- JavaScript / React
-
-## Progreso
-- [x] Layout inicial
-- [ ] Responsive
-- [ ] Integración API
+Consulta `README.md` en la raiz para la estructura del proyecto y los pasos de publicacion.
