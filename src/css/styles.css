@@ -372,9 +372,10 @@ input::placeholder {
     align-items: center;
     gap: 8px;
     margin-top: 24px;
-    width: 120%;
+    width: 100%;
     position: relative;
     box-sizing: border-box;
+    overflow: hidden;
 }
 
 .sports__all,
@@ -388,7 +389,7 @@ input::placeholder {
     scrollbar-width: none;
     box-sizing: border-box;
     flex: 1;
-    margin-left: -5pc;
+    margin-left: 0;
 }
 
 .sports__all::-webkit-scrollbar,
@@ -878,7 +879,7 @@ input::placeholder {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
-    max-width: 900px;
+    max-width: 1100px;
     margin: 0 auto auto auto;
 }
 
@@ -921,12 +922,13 @@ input::placeholder {
 .icons__container {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1.5pc;
     max-width: 1000px;
     margin: -2pc auto auto auto;
 }
 
-.icons__links img{
+.icons__links img {
     width: 50px;
     display: block;
     transition: color 0.3s ease;
@@ -959,7 +961,7 @@ input::placeholder {
 }
 
 .copy__disney {
-    width: 53%;
+    width: min(720px, calc(100% - 32px));
     font-size: 12px;
     text-align: center;
     margin-top: 2pc;
@@ -1080,6 +1082,10 @@ input::placeholder {
         padding: 28px 18px 34px;
     }
 
+    .sports__carousel {
+        gap: 6px;
+    }
+
     .plans {
         padding: 64px 0 68px;
     }
@@ -1131,6 +1137,24 @@ input::placeholder {
     .beneficies__download {
         font-size: 13px;
         padding-right: 8px;
+    }
+
+    .footer {
+        padding: 52px 24px 24px;
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+    }
+
+    .footer__icons {
+        padding: 40px 24px 20px;
+    }
+
+    .copy__disney {
+        font-size: 11px;
+        line-height: 1.7;
     }
 }
 
@@ -1192,6 +1216,7 @@ input::placeholder {
 
     .sports__carousel {
         gap: 0;
+        width: 100%;
     }
 
     .sports__all,
@@ -1352,6 +1377,48 @@ input::placeholder {
     .diferents__devices img {
         margin-top: 16px;
     }
+
+    .footer {
+        padding: 44px 16px 20px;
+    }
+
+    .footer__container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .footer__links a,
+    .footer__links h3 {
+        text-align: center;
+    }
+
+    .footer__icons {
+        padding: 28px 16px 16px;
+    }
+
+    .icons__container {
+        gap: 12px;
+        margin-top: -1rem;
+    }
+
+    .icons__links img {
+        width: 42px;
+    }
+
+    .logo__container {
+        margin-top: 0;
+    }
+
+    .logo__img img {
+        width: 110px;
+    }
+
+    .copy__disney {
+        width: calc(100% - 24px);
+        font-size: 10px;
+        margin-top: 16px;
+        margin-bottom: 20px;
+    }
 }
 
 @media (max-width: 390px) {
@@ -1387,6 +1454,15 @@ input::placeholder {
 
     .header {
         font-size: 13px;
+    }
+
+    .content2-degrade-offer {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    .subscription__form {
+        margin-top: 18px;
     }
 }
 
