@@ -372,7 +372,7 @@ input::placeholder {
     align-items: center;
     gap: 8px;
     margin-top: 24px;
-    width: 100%;
+    width: 120%;
     position: relative;
     box-sizing: border-box;
 }
@@ -388,6 +388,7 @@ input::placeholder {
     scrollbar-width: none;
     box-sizing: border-box;
     flex: 1;
+    margin-left: -5pc;
 }
 
 .sports__all::-webkit-scrollbar,
@@ -888,9 +889,9 @@ input::placeholder {
 }
 
 .footer__links a {
-    color: #ffffff;
+    color: #b8b8b8;
     font-family: "Poppins", sans-serif;
-    font-size: 11px;
+    font-size: 12px;
     text-decoration: none;
     line-height: 1.8;
     display: block;
@@ -911,25 +912,62 @@ input::placeholder {
     font-family: "Poppins", sans-serif;
 }
 
-/* ===================== FOOTER ICONS ===================== */
-
-.footer__icons{
-    max-width: 900px;
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
+.footer__icons {
+    background-color: #0e0b14;
+    color: white;
+    padding: 60px 40px 20px;
 }
 
-.icons__links img {
-    color: #ffffff;
-    font-family: "Poppins", sans-serif;
-    font-size: 11px;
-    text-decoration: none;
-    line-height: 1.8;
+.icons__container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5pc;
+    max-width: 1000px;
+    margin: -2pc auto auto auto;
+}
+
+.icons__links img{
+    width: 50px;
     display: block;
     transition: color 0.3s ease;
     margin-bottom: 1pc;
 }
 
+.footer__logo {
+    width: 100%;
+    background-color: #0e0b14;
+}
+
+.logo__container {
+    display: flex;
+    justify-content: center;
+    max-width: 1000px;
+    margin: -1pc auto auto auto;
+}
+
+.logo__img img {
+    width: 130px;
+}
+
+.footer__copy {
+    background-color: #0e0b14;
+}
+
+.copy__container {
+    display: flex;
+    justify-content: center;
+}
+
+.copy__disney {
+    width: 53%;
+    font-size: 12px;
+    text-align: center;
+    margin-top: 2pc;
+    margin-bottom: 2pc;
+    font-weight: 200;
+    line-height: 1.8;
+    color: #c9c8c8;
+}
 
 
 /* ===================== RESPONSIVE BREAKPOINTS ===================== */
